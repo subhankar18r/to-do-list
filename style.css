@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #0f0c29, #302b63, #24243e);
+  display: flex;
+  justify-content: center;
+}
+.container {
+  background: white;
+  width: 24.375rem;
+  max-width: 70vw;
+  height: fit-content;
+  min-height: 130px;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  margin-top: 110px;
+}
+.add-task {
+  background: #ddd;
+  border-radius: 10px;
+  height: 38px;
+  position: relative;
+  margin: 20px 0;
+}
+.add-task input {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  text-indent: 10px;
+}
+.add-task button {
+  position: absolute;
+  right: 0;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  height: 100%;
+  background: orangered;
+  color: white;
+  padding: 0 20px;
+}
+.tasks ul {
+  list-style: none;
+  font-size: 23px;
+}
+.tasks ul li {
+  margin: 7px 0;
+}
+.tasks li::before {
+  content: "";
+  background-image: url(./images/uncheck.svg);
+  height: 30px;
+  background-size: contain;
+  width: 30px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.tasks .checked {
+  text-decoration: line-through;
+}
+.tasks .checked::before {
+  background-image: url("./images/check.svg");
+  height: 26px;
+  width: 26px;
+}

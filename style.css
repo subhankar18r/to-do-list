@@ -32,6 +32,7 @@ body {
   border: none;
   outline: none;
   text-indent: 10px;
+  font-size: 20px;
 }
 .add-task button {
   position: absolute;
@@ -46,7 +47,7 @@ body {
 }
 .tasks ul {
   list-style: none;
-  font-size: 23px;
+  font-size: 20px;
 }
 .tasks ul li {
   margin: 7px 0;
@@ -69,4 +70,15 @@ body {
   background-image: url("./images/check.svg");
   height: 26px;
   width: 26px;
+}
+
+.tasks li img {
+  vertical-align: middle;
+  float: right;
+  margin-right: 12px;
+  padding: 2px;
+}
+.tasks li img:hover {
+  background-color: #ccc;
+  border-radius: 50%;
 }

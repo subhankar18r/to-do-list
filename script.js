@@ -1,5 +1,5 @@
 const taskInput = document.querySelector(".taskInput");
-const tasksContainer = document.querySelector(".tasks-container");
+const tasksContainer = document.querySelector(".not_completed");
 
 function addTask() {
   if (!taskInput.value) {
@@ -34,4 +34,4 @@ function fetchData() {
   tasksContainer.innerHTML = localStorage.getItem("data");
 }
 
-fetchData();
+// fetchData();

@@ -51,6 +51,7 @@ body {
 }
 .tasks ul li {
   margin: 7px 0;
+  cursor: pointer;
 }
 .tasks li::before {
   content: "";
